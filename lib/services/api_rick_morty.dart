@@ -24,7 +24,7 @@ class ApiService {
   }
 
   Future<CharacterPage> getCharactersPage(int page) async {
-    final data = await _getJson('$baseUrl/charac/te?page=$page');
+    final data = await _getJson('$baseUrl/character?page=$page');
     final info = data['info'] as Map<String, dynamic>;
 
     return CharacterPage(
