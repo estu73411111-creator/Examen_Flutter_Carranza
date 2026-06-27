@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Usuarios</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>👥 Lista de Usuarios</h1>
+    <p class="subtitle">100 usuarios generados con randomuser.me</p>
+  </header>
+
+  <main class="contenedor">
+    <div id="cargando" class="cargando">
+      <div class="spinner"></div>
+      <p>Cargando usuarios...</p>
+    </div>
+
+    <div id="error" class="error oculto">
+      <p>❌ No se pudieron cargar los usuarios. Intenta recargar la página.</p>
+    </div>
+
+    <div id="lista-usuarios" class="grid-usuarios oculto"></div>
+  </main>
+
+  <footer class="footer">
+    <p>Datos proporcionados por <a href="https://randomuser.me" target="_blank">randomuser.me</a></p>
+  </footer>
+
+  <script src="usuarios.js"></script>
+</body>
+</html>
